@@ -13,14 +13,14 @@ class Heli extends React.Component {
     if (nextProps.rotate.x !== this.props.rotate.x) {
       Animated.timing(this.rotationX, {
         toValue: this.props.rotate.x,
-        duration: 2000,
+        duration: 1000,
       }).start();
     }
 
     if (nextProps.rotate.y !== this.props.rotate.y) {
       Animated.timing(this.rotationY, {
         toValue: this.props.rotate.y,
-        duration: 2000,
+        duration: 1000,
       }).start();
     }
   }
